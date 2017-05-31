@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar hideBackButton="true">
+    <ion-title>Home</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding *ngIf="loginDetail">
+  <h3 text-center>Login User Details</h3>
+  <ion-grid>
+    <ion-row responsive-sm>
+      <ion-col col-md-3 col-sm-4>
+        {{loginDetail.url}}
+      </ion-col>
+      <ion-col col-md-3 col-sm-4>
+        {{loginDetail.repos_url}}
+      </ion-col>
+      <ion-col col-md-3 col-sm-4>
+        {{loginDetail.events_url}}
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
